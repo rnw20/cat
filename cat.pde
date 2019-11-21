@@ -1,20 +1,22 @@
 void setup()
 {
+  frameRate(60);
   size(500,300);
 }
 
 void draw()
 {
+  frameRate(60);
   background(163, 255, 232);
   if (keyPressed)
   {
     if (keyCode == RIGHT)
     {
+      frameRate(15);
       background(35, 63, 84);
       int dot = 0;
       while (dot < 150)
       {
-        frameRate(15);
         strokeWeight(2);
         stroke(255);
         point(random(500),random(300));
