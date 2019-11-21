@@ -48,17 +48,15 @@ void draw()
       fill(181, 232, 255);
     }
   }
-  if (key != '1')
-  {
-    rotate(-PI/12.0);
-    ellipse(335,220,130,20);  //tail
-  }
+  rotate(-PI/12.0);
+  ellipse(335,220,130,20);  //tail
   rotate(PI/12.0);
   ellipse(150,223,25,75);  //1st leg
   ellipse(195,223,25,75);  //2nd leg
   ellipse(240,223,25,75);  //3rd leg
   ellipse(285,223,25,75);  //4th leg
   ellipse(220,150,200,100);  //body
+
   if (keyCode != UP)
   {
     triangle(70,70,75,45,85,63);  //left ear
@@ -148,10 +146,10 @@ void draw()
     }
     if (key == '1')
     {
-      strokeWeight(1);
-      stroke(0);
-      rotate(-PI/6.0);
-      ellipse(mouseX,mouseY,130,20);
+      strokeWeight(3);
+      stroke(102, 15, 15);
+      noFill();
+      ellipse(100,120,mouseX/8,mouseY/8);
     }
   }
 }
